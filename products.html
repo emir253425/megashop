@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <title>Ürünler</title>
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <h1>Ürünler</h1>
+        <nav>
+            <a href="index.html">Ana Sayfa</a>
+            <a href="products.html">Ürünler</a>
+            <a href="contact.html">İletişim</a>
+        </nav>
+    </header>
+    <div class="swiper">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide">
+                <img src="images/product1.jpg" alt="KUPA 1">
+                <button onclick="addToCart('Ürün 1')">Sepete Ekle</button>
+            </div>
+            <div class="swiper-slide">
+                <img src="images/product2.jpg" alt="Ürün 2">
+                <button onclick="addToCart('KUPA 2')">Sepete Ekle</button>
+            </div>
+        </div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+    </div>
+    <div id="cart"></div>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>
